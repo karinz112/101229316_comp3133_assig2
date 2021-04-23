@@ -1,0 +1,18 @@
+<h1>Login</h1>
+<a mat-raised-button color="primary" routerLink="/signup">Create an Account</a>
+
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <p>
+    <label for="username" name="username">Enter User Name: </label>
+    <mat-form-field>
+    <input type="text" id="username" name="username" #username="ngModel" ngModel>
+    </mat-form-field>
+  </p>
+  <p>
+    <label for="password" name="password">Enter Password: </label>
+    <mat-form-field>
+    <input type="password" id="password" name="password" #password="ngModel" ngModel>
+    </mat-form-field>
+  </p>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+</form>

@@ -1,0 +1,30 @@
+  <ul>
+    <a mat-raised-button color="primary" routerLink="/login">Login</a>
+    <a mat-raised-button color="primary" routerLink="/bookings">View Bookings</a>
+    <a mat-raised-button color="primary" routerLink="/add-booking">Add Booking</a>
+    <a mat-raised-button color="primary" routerLink="/hotels">View Hotels</a>
+  </ul>
+
+<h1>Bookings</h1>
+
+<table id="table-design">
+  <thead>
+    <tr>
+      <th>Hotel ID</th>
+      <th>Booking Date</th>
+      <th>Booking Start</th>
+      <th>Booking End</th>
+      <th>User Id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of bookings">
+      <td>{{item.hotel_id}}</td>
+      <td>{{ item.booking_date}}</td>
+      <td>{{item.booking_start}}</td>
+      <td>{{item.booking_end}}</td>
+      <td>{{item.user_id}}</td>
+
+    </tr>
+  </tbody>
+</table>

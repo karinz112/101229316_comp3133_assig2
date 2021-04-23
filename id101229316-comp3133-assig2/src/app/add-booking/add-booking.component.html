@@ -1,0 +1,36 @@
+<ul>
+  <a mat-raised-button color="primary" routerLink="/login">Login</a>
+  <a mat-raised-button color="primary" routerLink="/bookings">View Bookings</a>
+  <a mat-raised-button color="primary" routerLink="/add-booking">Add Booking</a>
+  <a mat-raised-button color="primary" routerLink="/hotels">View Hotels</a>
+</ul>
+
+<h1>Add Booking</h1>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+  <p>
+    <label for="id">Hotel Id: </label>
+    <input type="number" id="id" name="id" ngModel>
+  </p>
+  <p>
+    <label for="booking_date">Booking Date: </label>
+    <input type="text" id="booking_date" name="booking_date" ngModel>
+  </p>
+  <p>
+    <label for="booking_start_date">Booking Start Date: </label>
+    <input type="text" id="booking_start_date" name="booking_start_date" ngModel>
+  </p>
+  <p>
+    <label for="booking_end_date">Booking End Date: </label>
+    <input type="text" id="booking_end_date" name="booking_end_date" ngModel>
+  </p>
+  <p>
+      <label for="user_id">User ID: </label>
+      <input type="number" id="user_id" name="user_id" ngModel>
+    </p>
+  <p>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </p>
+</form>
+
+
+
